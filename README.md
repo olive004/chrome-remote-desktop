@@ -1,9 +1,10 @@
 # Chrome Remote Desktop patches
 
-After 2 days of pain... here are the patches that made my chrome remote desktop work in the same session of my Ubuntu 20.10. 
-Assuming you've installed the debian current chrome remote desktop file and are still failing to get remote access with a PIN to work reliably, I hope these fixes help you.
-The directories here are set up to mirror the root ('/') folder of an Ubuntu or broadly linux distro system. 
-The files in them are the ones I use for running my chrome remote desktop. You should be able to copy them into your system as is (of course keep the originals of your own versions of these files).
+After 2 days of pain... here are the patches that made my chrome remote desktop work in the same session of my Ubuntu 20.10. Assuming you've installed the debian current chrome remote desktop file and are still failing to get remote access with a PIN to work reliably, I hope these fixes help you. 
+
+The most important / bulk of the changes are in the `/opt/google/chrome-remote-desktop/chrome-remote-desktop.modified` file, which is then copied into the `/opt/google/chrome-remote-desktop/chrome-remote-desktop` file.
+
+The directories here are set up to mirror the root ('/') folder of an Ubuntu or broadly linux distro system. The files in them are the ones I use for running my chrome remote desktop. You should be able to copy them into your system as is (of course keep the originals of your own versions of these files).
 
 ## Instructions
 1. Have the `ensure_remote_access.sh` script running in the background in case something breaks. As this requires superuser privileges due to the `sudo chown` command, this command was added to a sudoers config, but if you are uncomfortable with this adjustment, everything should run smoothly without these.
