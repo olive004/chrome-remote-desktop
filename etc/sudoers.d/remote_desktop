@@ -1,0 +1,3 @@
+wadh6511 ALL=(ALL:ALL) NOPASSWD: /bin/chown 
+wadh6511 ALL=(ALL:ALL) NOPASSWD: /bin/systemctl start chrome-remote-desktop@$USER
+
