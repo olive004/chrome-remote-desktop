@@ -1,4 +1,4 @@
-# Chrome Remote Desktop patches
+# Chrome Remote Desktop - Linux patches
 
 After 2 days of pain... here are the patches that made my chrome remote desktop work in the same session of my Ubuntu 20.10. Assuming you've installed the debian current chrome remote desktop file and are still failing to get remote access with a PIN to work reliably, I hope these fixes help you. 
 
